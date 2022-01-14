@@ -1,25 +1,24 @@
 $(document).ready(function() {
-  $("form#triangle").submit(function(event) {
+  $("form#survey").submit(function(event) {
     event.preventDefault();
 
-    const input1 = parseInt($("input#q1").valueOf());
-    const input2 = ("input#q2").valueOf();
-    const input3 = ("input#q3").valueOf();
-    const input4 = $("#q4").valueOf();
-    const input5 = $("#q5").valueOf();
+    const a1 = parseInt($("input#q1").val());
+    const a2 = parseInt($("input#q2").val());
+    const a3 = parseInt($("#q3").val());
+    const a4 = parseInt($("#q4").val());
+    const a5 = parseInt($("#q5").val());
 
     $("#lang1").hide();
     $("#lang2").hide();
     $("#lang3").hide();
     $("#invalid").hide();
 
-    if (){
-      $("#lang1").show();
-    } else if () {
-      $("#lang2").show();
-    } else if () {
-      $("#lang3").show();
-    } else if () {
+    if  ((a3 == 1) || (a4 == 1) || (a5 == 1)) {
       $("#invalid").show();
+    } else if ((a1 + a2) >= (a3 + a4 +a5)){
+      $("#lang1").show();
+    } else {
+      $("#invalid").show();
+    }
   });
 });

@@ -2,7 +2,12 @@ body {
   background-color: rgb(75, 88, 84);
 }
 
-#lang1, #lang2, #lang3, #invalid {
+#lang1, #lang2, #lang3 {
   display: none;
+  text-align: center;
+}
+#invalid {
+  display: none;
+  color:yellow;
   text-align: center;
 }
