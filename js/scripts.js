@@ -14,7 +14,7 @@ $(document).ready(function() {
     $("#invalid").hide();
 
 
-    if ((a3 == 1) || (a4 == 1) || (a5 == 1)) {
+    if ((a3 === 1) || (a4 === 1) || (a5 === 1)) {
       $("#invalid").show();
     } else if (((a3 === a4) && (a3 === a5)) && (a1 && a2 >= 0)) {
       $("#lang1").show();
