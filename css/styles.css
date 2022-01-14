@@ -4,12 +4,12 @@ body {
 
 #lang1, #lang2, #lang3 {
   display: none;
-  color: aqua;
+  color: brown;
   text-align: center;
 }
 
 #invalid {
   display: none;
-  color:yellow;
+  color:red;
   text-align: center;
 }
