@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(75, 88, 84);
+}
+
+#lang1, #lang2, #lang3, #invalid {
+  display: none;
+  text-align: center;
+}
