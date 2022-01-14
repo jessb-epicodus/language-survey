@@ -13,9 +13,14 @@ $(document).ready(function() {
     $("#lang3").hide();
     $("#invalid").hide();
 
-    if  ((a3 == 1) || (a4 == 1) || (a5 == 1)) {
+
+    if ((a3 == 1) || (a4 == 1) || (a5 == 1)) {
       $("#invalid").show();
-    } else if ((a1 + a2) >= (a3 + a4 +a5)){
+    } else if ((a1 + a2) > (a3 + a4 + a5)){
+      $("#lang2").show();
+    } else if ((a2 - a1) > (a3 + a4 + a5)){
+      $("#lang3").show();
+    } else if ((a1 + a2 + a3 + a4 + a5) % 2 == 0) {
       $("#lang1").show();
     } else {
       $("#invalid").show();
