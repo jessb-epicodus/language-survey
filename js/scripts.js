@@ -12,5 +12,14 @@ $(document).ready(function() {
     $("#lang2").hide();
     $("#lang3").hide();
     $("#invalid").hide();
+
+    if (){
+      $("#lang1").show();
+    } else if () {
+      $("#lang2").show();
+    } else if () {
+      $("#lang3").show();
+    } else if () {
+      $("#invalid").show();
   });
 });
