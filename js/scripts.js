@@ -16,11 +16,11 @@ $(document).ready(function() {
 //functions result in #invald when a1 = 0
     if ((a3 === 1) || (a4 === 1) || (a5 === 1)) {
       $("#invalid").show();
-    } else if (((a3 === a4) && (a3 === a5)) && (a1>= 0)) {
+    } else if (((a3 === a4) && (a3 === a5)) && (a1 && a2 >= 0)) {
       $("#lang1").show();
-    } else if (((a1 + a2 + a3 + a4 + a5) % 2 == 0) && (a1>= 0)) {
+    } else if (((a1 + a2 + a3 + a4 + a5) % 2 == 0) && (a1 && a2 >= 0)) {
       $("#lang2").show();
-    } else if (((a1 + a2 + a3 + a4 + a5) % 2 !== 0) && (a1 >= 0)) {
+    } else if (((a1 + a2 + a3 + a4 + a5) % 2 !== 0) && (a1 && a2 >= 0)) {
       $("#lang3").show();
     } else {
       $("#invalid").show();
