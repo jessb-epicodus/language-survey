@@ -27,7 +27,7 @@ This code review project is to create an application for people interested in co
 
 ## Known Bugs
 
-* No known issues
+* 0 as a1 returns invalid result.
 
 ## License
 
