@@ -23,7 +23,7 @@ This code review project is to create an application for people interested in co
 * Cone this repository to your desktop (or other desired location)
 * Navigate to the top level of the directory called _programming-language-suggester_
 * Open the index.html file in your browser
-* Or copy & paste this link in your brower: _PUBLISHEDLINK_
+* Or copy & paste this link in your brower: _https://jessb-epicodus.github.io/programming-language-suggester/_
 
 ## Known Bugs
 
