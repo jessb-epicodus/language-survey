@@ -2,11 +2,11 @@ $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
 
-    const a1 = parseInt($("input#q1").val());
-    const a2 = parseInt($("input#q2").val());
-    const a3 = parseInt($("#q3").val());
-    const a4 = parseInt($("#q4").val());
-    const a5 = parseInt($("#q5").val());
+    const lucky = parseInt($("input#question1").val());
+    const sib = parseInt($("input#question2").val());
+    const dayNi = parseInt($("#question3").val());
+    const fight = parseInt($("#question4").val());
+    const speak = parseInt($("#question5").val());
 
     $("#lang1").hide();
     $("#lang2").hide();
@@ -14,13 +14,13 @@ $(document).ready(function() {
     $("#invalid").hide();
 
 //functions result in #invald when a1 = 0
-    if ((a3 === 1) || (a4 === 1) || (a5 === 1)) {
+    if ((dayNi === 1) || (fight === 1) || (speak === 1)) {
       $("#invalid").show();
-    } else if (((a3 === a4) && (a3 === a5)) && (a1 && a2 >= 0)) {
+    } else if (((dayNi === fight) && (dayNi === speak)) && (lucky && sib >= 0)) {
       $("#lang1").show();
-    } else if (((a1 + a2 + a3 + a4 + a5) % 2 == 0) && (a1 && a2 >= 0)) {
+    } else if (((lucky + sib + dayNi + fight + speak) % 2 == 0) && (lucky && sib >= 0)) {
       $("#lang2").show();
-    } else if (((a1 + a2 + a3 + a4 + a5) % 2 !== 0) && (a1 && a2 >= 0)) {
+    } else if (((lucky + sib + dayNi + fight + speak) % 2 !== 0) && (lucky && sib >= 0)) {
       $("#lang3").show();
     } else {
       $("#invalid").show();
