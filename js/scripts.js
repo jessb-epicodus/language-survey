@@ -13,10 +13,9 @@ $(document).ready(function() {
     $("#lang3").hide();
     $("#invalid").hide();
 
-//functions result in #invald when a1 = 0
     if ((ans3 === 1) || (ans4 === 1) || (ans5 === 1)) {
       $("#invalid").show();
-    } else if (((ans3 === ans4) && (ans3 === ans5)) {
+    } else if (((ans3 === ans4) && (ans3 === ans5)) && ((ans1 >= 0) && (ans2 >= 0))) {
       $("#lang1").show();
     } else if (((ans1 + ans2 + ans3 + ans4 + ans5) % 2 == 0) && (ans1 && ans2 >= 0)) {
       $("#lang2").show();
