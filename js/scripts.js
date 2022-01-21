@@ -16,7 +16,7 @@ $(document).ready(function() {
 //functions result in #invald when a1 = 0
     if ((dayNi === 1) || (fight === 1) || (speak === 1)) {
       $("#invalid").show();
-    } else if (((dayNi === fight) && (dayNi === speak)) && (lucky && sib >= 0)) {
+    } else if (((dayNi === fight) && (dayNi === speak)) && ((lucky >= 0) && (sib >= 0)) {
       $("#lang1").show();
     } else if (((lucky + sib + dayNi + fight + speak) % 2 == 0) && (lucky && sib >= 0)) {
       $("#lang2").show();
