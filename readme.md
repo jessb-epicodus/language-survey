@@ -27,7 +27,7 @@ This code review project is to create an application for people interested in co
 
 ## Known Bugs
 
-* When a1 & a2 = 0 results as #invalid & does not complete the desired function.
+* No known bugs.
 
 ## License
 

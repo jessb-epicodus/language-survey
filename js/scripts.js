@@ -17,7 +17,7 @@ $(document).ready(function() {
       $("#invalid").show();
     } else if (((ans3 === ans4) && (ans3 === ans5)) && ((ans1 >= 0) && (ans2 >= 0))) {
       $("#lang1").show();
-    } else if (((ans1 + ans2 + ans3 + ans4 + ans5) % 2 == 0) && (ans1 && ans2 >= 0)) {
+    } else if (((ans1 + ans2 + ans3 + ans4 + ans5) % 2 === 0) && (ans1 && ans2 >= 0)) {
       $("#lang2").show();
     } else if (((ans1 + ans2 + ans3 + ans4 + ans5) % 2 !== 0) && (ans1 && ans2 >= 0)) {
       $("#lang3").show();
